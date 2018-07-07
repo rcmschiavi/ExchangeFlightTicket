@@ -13,28 +13,28 @@ time to stay with tourist visa). Creating a combination of 112 searchs, wich wou
 If you have no knowledge in programming, you just have to download the file "ExchangeFlightTicket.exe" at the directory "dist", image 1, click at the file, image 2, and download like the image 3. Then run the program
  and follow the next steps.
 
-![Image 1 - Directory](images/downloading1.jpg)
+![Image 1 - Directory](images/downloading1.JPG)
 
-![Image 2 - Program](images/downloading2.jpg)
+![Image 2 - Program](images/downloading2.JPG)
 
-![Image 2 - Downloading](images/downloading3.jpg)
+![Image 3 - Downloading](images/downloading3.JPG)
 
 2. Filling in the city's field:
 Now you have to put the name of your departure city and arrival one for the search, image 4. After filling in and pressing enter, you can confirm if the answer matches
 with your desire. If the city is different, close the program, open again and try to put another information, like the country of the city. 
 Other possibility is a typo and find no matches, then you can try again.
 
-![Image 4 - Filling in with the cities](images/searching1.jpg)
+![Image 4 - Filling in with the cities](images/searching1.JPG)
 
 3. Wait
 Just wait a few minutes until it completes all the requests. The time will depend on your internet speed. 
 
-![Image 5 - Loading...](images/wait.jpg)
+![Image 5 - Loading...](images/wait.JPG)
 
 4. Results
-After completing the search, you can open the file created, image 6, following the the final program instruction, wich you inform where it is and the name of the file
-.
-![Image 6 - Results...](images/results.jpg)
+After completing the search, you can open the file created, image 6, following the the final program instruction, wich you inform where it is and the name of the file.
+
+![Image 6 - Results...](images/results.JPG)
 
 
 ## Possible errors
