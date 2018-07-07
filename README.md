@@ -16,12 +16,15 @@ If you have no knowledge in programming, you just have to download the file "Exc
  and follow the next steps.
 
 ![Image 1 - Directory](images/downloading1.JPG)
+
 Image 1 - Directory
 
 ![Image 2 - Program](images/downloading2.JPG)
+
 Image 2 - Program
 
 ![Image 3 - Downloading](images/downloading3.JPG)
+
 Image 3 - Downloading
 
 2. Filling in the city's field:
@@ -31,6 +34,7 @@ with your desire. If the city is different, close the program, open again and tr
 Other possibility is a typo and find no matches, then you can try again.
 
 ![Image 4 - Filling in with the cities](images/searching1.JPG)
+
 Image 4 - Filling in with the cities
 
 3. Wait:
@@ -38,13 +42,15 @@ Image 4 - Filling in with the cities
 Just wait a few minutes until it completes all the requests. The time will depend on your internet speed. 
 
 ![Image 5 - Loading...](images/wait.JPG)
+
 Image 5 - Loading...
 
 4. Results:
 
-After completing the search, you can open the file created, image 6, following the final program instruction, wich will inform where it is and the name's file.
+After completing the search, you can open the file created, image 6, following the final program instruction, wich will inform where it is and the file's name.
 
 ![Image 6 - Results.](images/Results.JPG)
+
 Image 6 - Results.
 
 
