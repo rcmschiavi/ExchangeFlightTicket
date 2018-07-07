@@ -1,6 +1,7 @@
 # Exchange Flight Ticket
 
-Exchange flight ticket is a script made for scrapping flight tickets for students looking for the best combination of price and day trip. Just put the departure city
+Exchange flight ticket is a script made for scrapping flight tickets for students of the exchange program Propicie 14 from Instituto Federal de Santa Catarina, 
+looking for the best combination of price and day trip. Just put the departure city
 and the arrival one, and it'll you create a excel file with all the flights searched.
 
 ## Search
@@ -8,7 +9,7 @@ and the arrival one, and it'll you create a excel file with all the flights sear
 The search is made changing the outbound day between 10/09/2018 and 25/09/2018 and changing the amount of time between the outbound and return, 84 to 90 (limit
 time to stay with tourist visa). Creating a combination of 112 searchs, wich would be really boring for a person to do.
 
-### How to
+### How to use
 1. Download the program:
 
 If you have no knowledge in programming, you just have to download the file "ExchangeFlightTicket.exe" at the directory "dist", image 1, click at the file, image 2, and download like the image 3. Then run the program
