@@ -1,3 +1,8 @@
+
+
+## O código está uma bagunça, vairáveis em inglês e portugues, sem comentários e outros defeitos de boas práticas
+## Porém pelo tempo disponível foi o que deu pra fazer sem se preocupar com detalhes.
+
 import datetime
 import requests
 import json
