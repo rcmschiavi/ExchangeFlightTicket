@@ -71,6 +71,7 @@ for j in range (0,inc_estadia):
         print("Partial amount: R${0} Outbound:{1} Return:{2} Days:{3} ".format(preco,data_ida,data_retorno,time_stay))
         sheet.grava_linha(linha,cont)
         sheet.salvar("{0}-{1}".format(city_dep[0],city_arr[0]))
+        time.sleep(.100)
 
 print("Mission success, open the file {0}-{1}.xls located at the same folder of this program".format(city_dep[0],city_arr[0]))
 #Para criar o exe
