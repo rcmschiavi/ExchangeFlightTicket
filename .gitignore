@@ -25,3 +25,9 @@ pesquisa.xls
 test.xls
 main.spec
 dist/FLN-OAL.xls
+OAL-BIO.xls
+OAL-CGB.xls
+OAL-JPR.xls
+OAL-SAO.xls
+MAO-BIO.xls
+interface.py
