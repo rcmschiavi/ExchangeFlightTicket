@@ -33,19 +33,24 @@ def nome_cidade(acao):
 def busca_passagem(date_dep,date_ret,mes_retorno,ano_retorno):
     global menor_valor,data_menor_valor_ida,data_menor_valor_volta,cont,inc_estadia,incr_dias
     url = 'https://www.decolar.com/shop/flights-busquets/api/v1/web/calendar-prices/matrix?adults=1&children=0&infants=0&limit=10&site=BR&channel=site&from={0}&to={1}&departureDate=2018-09-{2}&returnDate={5}-{4}-{3}&groupBy=default&orderBy=total_price_ascending&viewMode=CLUSTER&language=pt_BR&streaming=false&airlineSummary=false&user=01be5064-a932-4505-be50-64a932050539&additionalProduct=NONE&h=baf8b759801e4b6c12a8333d0f72d32a&di=1-0&mustIncludeDates=NA_NA&currency=BRL&breakdownType=TOTAL_FARE_ONLY'.format(city_dep[0],city_arr[0],date_dep,date_ret,mes_retorno,ano_retorno)
-    page = requests.get(url)
-    page = page.text
-    j = json.loads(page)
-    print('{0}%'.format(int(cont*100/(inc_estadia*incr_dias))))
     try:
-        preco = j['currentPrice']['amount']
-        if(preco<=menor_valor):
-            menor_valor=preco
-            data_menor_valor_ida=date_dep
-            data_menor_valor_volta=date_ret
-        return preco
+        page = requests.get(url) #Consome a maior parte do tempo no processo
+        page = page.text
+        j = json.loads(page)
+        print('{0}%'.format(int(cont*100/(inc_estadia*incr_dias))))
+        try:
+            preco = j['currentPrice']['amount']
+            if(preco<=menor_valor):
+                menor_valor=preco
+                data_menor_valor_ida=date_dep
+                data_menor_valor_volta=date_ret
+            return preco
+        except:
+            return " There is no flight this day"
     except:
-        return -1
+        print("Time out. Maybe the internet conection is to week.")
+        print(" ")
+        return "Internet error"
 
 city_dep = nome_cidade('Departure')
 while(city_dep==0):
@@ -76,7 +81,7 @@ for j in range (0,inc_estadia):
         print("Partial amount: R${0} Outbound:{1} Return:{2} Days:{3} ".format(preco,data_ida,data_retorno,time_stay))
         sheet.grava_linha(linha,cont)
         sheet.salvar("{0}-{1}".format(city_dep[0],city_arr[0]))
-        time.sleep(.100)
+        time.sleep(.100) #Evita sofrer block do servidor, realizando muitas requisições sem aguardar
 
 print("Mission success, open the file {0}-{1}.xls located at the same folder of this program".format(city_dep[0],city_arr[0]))
 #Para criar o exe
